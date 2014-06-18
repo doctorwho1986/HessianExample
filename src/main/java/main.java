@@ -18,7 +18,7 @@ public class main {
 	 
     
 	public static void main(String[] args) throws MalformedURLException {
-		 String url = "http://localhost:8080/hessianEx/hello";   
+		 String url = "http://localhost:8080/HessianExample/hello";   
 	     HessianProxyFactory factory = new HessianProxyFactory();   
 	     Person basic = (Person) factory.create(Person.class, url);   
 	     Car car   = basic.getCar();
