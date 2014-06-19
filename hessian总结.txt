@@ -1,0 +1,9 @@
+1.接口方法重载注意：
+  默认，方法重载功能关闭，见代码：
+  HessianProxy 154，155行代码：
+   if (! _factory.isOverloadEnabled())
+        mangleName = method.getName();
+      else
+        mangleName = mangleName(method);
+   
+   如果要支持，需配置。
